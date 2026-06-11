@@ -60,5 +60,9 @@ p {
     font-size: 1.1rem;
     line-height: 1.6;
     color: #cccccc;
+.content.visible {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
 }
+    
 

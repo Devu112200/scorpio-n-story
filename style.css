@@ -1,1 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0b0b0b;
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+}
+
+#canvas-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    pointer-events: none; /* Allows selection of HTML text underneath */
+}
+
+main {
+    position: relative;
+    z-index: 2;
+}
+
+.scroll-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.content {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 2.5rem;
+    border-radius: 12px;
+    max-width: 500px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    opacity: 0; /* Animated via GSAP */
+    transform: translateY(50px);
+}
+
+.content.left { margin-right: auto; margin-left: 10%; }
+.content.right { margin-left: auto; margin-right: 10%; }
+
+h1, h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #ff3333; /* Sporty red accent */
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #cccccc;
+}
 

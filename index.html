@@ -1,1 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scorpio-N: The Journey</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Include GSAP and Three.js via CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+
+    <!-- 3D WebGL Canvas Wrapper -->
+    <div id="canvas-container"></div>
+
+    <!-- Scrollable Story Sections -->
+    <main>
+        <section class="scroll-section" id="intro">
+            <div class="content">
+                <h1>The Scorpio-N</h1>
+                <p>Scroll down to unlock the next chapter.</p>
+            </div>
+        </section>
+
+        <section class="scroll-section" id="gate-open">
+            <div class="content left">
+                <h2>Unleash the Beast</h2>
+                <p>The gates open up to a brand new dimension of power.</p>
+            </div>
+        </section>
+
+        <section class="scroll-section" id="corridor-drive">
+            <div class="content right">
+                <h2>Navigate the Unknown</h2>
+                <p>Cruising seamlessly through structural engineering masterclasses.</p>
+            </div>
+        </section>
+
+        <section class="scroll-section" id="final-view">
+            <div class="content">
+                <h2>The Ultimate SUV</h2>
+                <p>Commanding presence, wherever it stands.</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>
 
